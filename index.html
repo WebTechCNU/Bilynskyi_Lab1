@@ -1,20 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Calculate symbols in text</title>
-
+    <meta charset="UTF-8">
+    <title>Lab 1 - Repeat</title>
+    <script src="https://kit.fontawesome.com/81b54e6bc6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./templates/css/style.css">
 </head>
 <body>
-	<div id="calculator">
-		<h2>Calculate symbols in text</h2>
-		<textarea id="text"></textarea>
-		<button onclick="calcSymbols()">Calculate</button>
+<header class="header">
+    <div class="container">
+        <div class="header-nav">
+            <div class="settingslogo">
+                <a href="./index.html" class="logo"><i class="fa-regular fa-user"></i>Ян Білинський</a>
+                <div class="info">
+                    <img src="https://i.imgur.com/NKWjGHO.jpg" alt="" width="280px" height="400px" style="border-radius: 30px;">
+                    <p>Ян Білинський</p>
+                    <p>Student of second course</p>
+                    <p>Group 207-A</p>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="./index.html" class="nav-link active">Калькулятор символів у тексті</a></li>
+                    <li class="nav-item"><a href="./pages/suma.html" class="nav-link">Суми правописом</a></li>
+                    <li class="nav-item"><a href="./pages/math.html" class="nav-link">Сума та добуток</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<body>
+    <div id="calculator" class="calculator">
+        <h2>Calculate symbols in text</h2>
+        <textarea id="text"></textarea>
+        <button onclick="calcSymbols()">Calculate</button>
         <p id="output"></p>
-	</div>
-
-
-	
-
-<script src="scripts/textCalc.js"></script>
+    </div>
+<script src="./templates/js/text_cal.js"></script>
+    <script src="./templates/js/index.js"></script>
 </body>
+
 </html>
